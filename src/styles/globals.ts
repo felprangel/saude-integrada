@@ -1,8 +1,8 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   :root {
-    // Adicionar variáveis de cor aqui
+    --primary-color: #3B7D8C;
   }
 
   * {
@@ -44,4 +44,4 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 87.5%;
     }
   }
-`;
+`
