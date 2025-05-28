@@ -4,6 +4,7 @@ export const GlobalStyle = createGlobalStyle`
   :root {
     --primary-color: #3B7D8C;
     --grey: #F2F2F2;
+    --text-color: #193B59;
   }
 
   * {
@@ -11,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    color: #193B59;
   }
 
   a {
