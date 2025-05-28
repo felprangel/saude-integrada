@@ -1,5 +1,5 @@
 import { Header } from '@/components/Header'
-import Hero from '../../public/hero.png'
+import Hero from '../../public/hero.svg'
 import ClickIcon from '../../public/icons/click.svg'
 import Image from 'next/image'
 import styled from 'styled-components'
