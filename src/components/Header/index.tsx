@@ -9,8 +9,8 @@ export function Header() {
         <Image src={Logo} alt="logo" />
       </LogoContainer>
       <LinksContainer>
-        <p>Sobre o UC HUB</p>
-        <p>Projeto</p>
+        <Text>Sobre o UC HUB</Text>
+        <Text>Projeto</Text>
       </LinksContainer>
     </HeaderContainer>
   )
@@ -30,11 +30,14 @@ const LogoContainer = styled.div`
 `
 
 const LinksContainer = styled.div`
-  font-weight: 500;
-  font-size: 1.2rem;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+`
+
+const Text = styled.p`
   color: var(--grey);
+  font-weight: 500;
+  font-size: 1.2rem;
 `
