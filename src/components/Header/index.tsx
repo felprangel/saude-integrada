@@ -8,11 +8,16 @@ export function Header() {
       <LogoContainer>
         <Image src={Logo} alt="logo" />
       </LogoContainer>
+      <LinksContainer>
+        <p>Sobre o UC HUB</p>
+        <p>Projeto</p>
+      </LinksContainer>
     </HeaderContainer>
   )
 }
 
 const HeaderContainer = styled.div`
+  display: flex;
   width: 100%;
   background-color: var(--primary-color);
 `
@@ -22,4 +27,12 @@ const LogoContainer = styled.div`
   padding: 0 5rem 0 2rem;
   border-radius: 0 2rem 2rem 0;
   background-color: var(--grey);
+`
+
+const LinksContainer = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--grey);
 `
