@@ -27,10 +27,11 @@ const HeroSection = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding: 0 3rem;
 `
 
 const Paragraph = styled.div`
-  margin: 3rem;
+  margin: 3rem 0;
   width: 50%;
 `
 
