@@ -30,6 +30,8 @@ const LogoContainer = styled.div`
 `
 
 const LinksContainer = styled.div`
+  font-weight: 500;
+  font-size: 1.2rem;
   width: 100%;
   display: flex;
   align-items: center;
