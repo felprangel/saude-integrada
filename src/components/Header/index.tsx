@@ -18,5 +18,8 @@ const HeaderContainer = styled.div`
 `
 
 const LogoContainer = styled.div`
+  max-width: fit-content;
+  padding: 0 5rem 0 2rem;
+  border-radius: 0 2rem 2rem 0;
   background-color: var(--grey);
 `
