@@ -30,15 +30,17 @@ const HeroSection = styled.div`
 
 const Paragraph = styled.div`
   margin: 3rem;
-  width: 40%;
+  width: 50%;
 `
 
 const HeroTitle = styled.h3`
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.5rem;
 `
 
 const HeroText = styled.p`
+  width: 50%;
+  margin: 1rem 0;
   font-weight: 300;
   font-size: 1.2rem;
 `
