@@ -14,7 +14,7 @@ export default function Home() {
           <HeroText>Conectando dados, ciência e comunidade para fortalecer a saúde pública</HeroText>
           <Button>
             <ButtonText>Acessar painel de dados</ButtonText>
-            <Image src={ClickIcon} alt="click icon" />
+            <Image height={30} width={30} src={ClickIcon} alt="click icon" />
           </Button>
         </Paragraph>
         <Image src={Hero} alt="hero image" />
@@ -44,4 +44,19 @@ const HeroText = styled.p`
   margin: 1rem 0;
   font-weight: 300;
   font-size: 1.2rem;
+`
+
+const Button = styled.button`
+  border: 0;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+`
+
+const ButtonText = styled.p`
+  color: var(--grey);
 `
