@@ -12,9 +12,10 @@ export default function Home() {
         <Paragraph>
           <HeroTitle>Monitoramento participativo para uma saúde única</HeroTitle>
           <HeroText>Conectando dados, ciência e comunidade para fortalecer a saúde pública</HeroText>
-          <button>
-            Acessar painel de dados <Image src={ClickIcon} alt="click icon" />
-          </button>
+          <Button>
+            <ButtonText>Acessar painel de dados</ButtonText>
+            <Image src={ClickIcon} alt="click icon" />
+          </Button>
         </Paragraph>
         <Image src={Hero} alt="hero image" />
       </HeroSection>
