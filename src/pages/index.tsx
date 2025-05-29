@@ -38,6 +38,13 @@ export default function Home() {
           </Paragraph>
         </Divider>
       </HubSection>
+      <CardSection>
+        <Title>Portal interativo de saúde</Title>
+        <Divider>
+          <CardColumn></CardColumn>
+          <CardColumn></CardColumn>
+        </Divider>
+      </CardSection>
     </>
   )
 }
@@ -109,4 +116,18 @@ const HubText = styled.p`
   margin: 1rem 0;
   font-weight: 300;
   font-size: 1.2rem;
+`
+
+const CardSection = styled.div`
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+const CardColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 `
