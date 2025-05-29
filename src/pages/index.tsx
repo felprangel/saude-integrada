@@ -1,6 +1,7 @@
 import { Header } from '@/components/Header'
 import Hero from '../../public/hero.svg'
 import ClickIcon from '../../public/icons/click.svg'
+import Medicos from '../../public/Medicos.png'
 import Image from 'next/image'
 import styled from 'styled-components'
 import { useRouter } from 'next/router'
@@ -22,7 +23,20 @@ export default function Home() {
         <Image src={Hero} alt="hero image" />
       </HeroSection>
       <HubSection>
-        <Title>Monitoramento participativo para uma saúde única</Title>
+        <Title>O que é o UC HUB?</Title>
+        <Divider>
+          <Image src={Medicos} alt="doctors photos" />
+          <Paragraph>
+            <SubTitle>
+              O UC HUB – Saúde Única e Ações Integradas é um projeto acadêmico que integra dados epidemiológicos,{' '}
+            </SubTitle>
+            <HeroText>
+              participação social e capacitação em saúde pública. Seu objetivo é promover a vigilância participativa,
+              facilitar o acesso à informação e apoiar a tomada de decisões estratégicas na gestão da saúde coletiva,
+              com foco na região Centro-Oeste de Minas Gerais.{' '}
+            </HeroText>
+          </Paragraph>
+        </Divider>
       </HubSection>
     </>
   )
@@ -43,6 +57,11 @@ const Paragraph = styled.div`
 const Title = styled.h3`
   font-weight: 500;
   font-size: 2.5rem;
+`
+
+const SubTitle = styled.h4`
+  font-weight: 500;
+  font-size: 1.8rem;
 `
 
 const HeroText = styled.p`
@@ -67,4 +86,14 @@ const ButtonText = styled.p`
   color: var(--grey);
 `
 
-const HubSection = styled.div``
+const HubSection = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+const Divider = styled.div`
+  display: flex;
+  justify-content: center;
+`
