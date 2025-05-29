@@ -22,11 +22,20 @@ export function Card(props: CardProps) {
 
 const CardContent = styled.div`
   background-color: var(--card-color);
-  border-radius: 5px;
+  border-radius: 1rem;
   display: flex;
+  padding: 2rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  gap: 1rem;
 `
 
-const CardTextContainer = styled.div``
+const CardTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+`
 
 const CardTitle = styled.h3`
   font-weight: 500;
