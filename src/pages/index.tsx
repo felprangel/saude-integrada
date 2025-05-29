@@ -101,6 +101,7 @@ const Divider = styled.div`
   display: flex;
   justify-content: center;
   gap: 5rem;
+  padding: 0 5rem;
 `
 
 const HubText = styled.p`
