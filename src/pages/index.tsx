@@ -65,10 +65,11 @@ const SubTitle = styled.h4`
 `
 
 const HeroText = styled.p`
-  width: 50%;
+  width: 60%;
   margin: 1rem 0;
   font-weight: 300;
   font-size: 1.2rem;
+  margin-bottom: 2rem;
 `
 
 const Button = styled.button`
