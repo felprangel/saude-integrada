@@ -5,6 +5,7 @@ import Medicos from '../../public/Medicos.png'
 import Image from 'next/image'
 import styled from 'styled-components'
 import { useRouter } from 'next/router'
+import { Card } from '@/components/Card'
 
 export default function Home() {
   const Router = useRouter()
@@ -41,8 +42,23 @@ export default function Home() {
       <CardSection>
         <Title>Portal interativo de saúde</Title>
         <Divider>
-          <CardColumn></CardColumn>
-          <CardColumn></CardColumn>
+          <CardColumn>
+            <Card
+              image={ClickIcon}
+              title="Painel de indicadores"
+              description="Veja os dados e tendências em tempo real"
+            />
+            <Card image={ClickIcon} title="Notificar sintomas" description="Ajude a monitorar sua região" />
+            <Card
+              image={ClickIcon}
+              title="Repositório científico"
+              description="Consulta materiais produzidos pelo observatório"
+            />
+          </CardColumn>
+          <CardColumn>
+            <Card image={ClickIcon} title="Mapa da saúde" description="Explore surtos e informações geográficas" />
+            <Card image={ClickIcon} title="Educação em saúde" description="Acesse vídeos, podcasts e FAQs" />
+          </CardColumn>
         </Divider>
       </CardSection>
     </>
