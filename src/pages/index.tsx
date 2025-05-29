@@ -21,6 +21,9 @@ export default function Home() {
         </Paragraph>
         <Image src={Hero} alt="hero image" />
       </HeroSection>
+      <HubSection>
+        <Title>Monitoramento participativo para uma saúde única</Title>
+      </HubSection>
     </>
   )
 }
@@ -63,3 +66,5 @@ const Button = styled.button`
 const ButtonText = styled.p`
   color: var(--grey);
 `
+
+const HubSection = styled.div``
