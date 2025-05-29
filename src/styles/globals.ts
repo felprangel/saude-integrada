@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     --primary-color: #3B7D8C;
     --grey: #F2F2F2;
     --text-color: #193B59;
+    --card-color: #5EBFBF;
   }
 
   * {
