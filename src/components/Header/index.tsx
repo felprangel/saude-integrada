@@ -6,7 +6,8 @@ export function Header() {
   return (
     <HeaderContainer>
       <LogoContainer>
-        <Image src={Logo} alt="logo" />
+        {' '}
+        <Image height={90} src={Logo} alt="logo" />
       </LogoContainer>
       <LinksContainer>
         <Text>Sobre o UC HUB</Text>
