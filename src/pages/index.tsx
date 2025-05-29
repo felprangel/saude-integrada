@@ -3,8 +3,10 @@ import Hero from '../../public/hero.svg'
 import ClickIcon from '../../public/icons/click.svg'
 import Image from 'next/image'
 import styled from 'styled-components'
+import { useRouter } from 'next/router'
 
 export default function Home() {
+  const Router = useRouter()
   return (
     <>
       <Header />
@@ -12,7 +14,7 @@ export default function Home() {
         <Paragraph>
           <HeroTitle>Monitoramento participativo para uma saúde única</HeroTitle>
           <HeroText>Conectando dados, ciência e comunidade para fortalecer a saúde pública</HeroText>
-          <Button>
+          <Button onClick={() => Router.push('/painel-dados')}>
             <ButtonText>Acessar painel de dados</ButtonText>
             <Image height={30} width={30} src={ClickIcon} alt="click icon" />
           </Button>
