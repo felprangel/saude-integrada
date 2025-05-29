@@ -25,16 +25,16 @@ export default function Home() {
       <HubSection>
         <Title>O que é o UC HUB?</Title>
         <Divider>
-          <Image src={Medicos} alt="doctors photos" />
+          <Image style={{ marginTop: '4rem' }} src={Medicos} alt="doctors photos" />
           <Paragraph>
             <SubTitle>
               O UC HUB – Saúde Única e Ações Integradas é um projeto acadêmico que integra dados epidemiológicos,{' '}
             </SubTitle>
-            <HeroText>
+            <HubText>
               participação social e capacitação em saúde pública. Seu objetivo é promover a vigilância participativa,
               facilitar o acesso à informação e apoiar a tomada de decisões estratégicas na gestão da saúde coletiva,
               com foco na região Centro-Oeste de Minas Gerais.{' '}
-            </HeroText>
+            </HubText>
           </Paragraph>
         </Divider>
       </HubSection>
@@ -87,13 +87,24 @@ const ButtonText = styled.p`
 `
 
 const HubSection = styled.div`
+  margin-top: 6rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
 `
 
 const Divider = styled.div`
   display: flex;
   justify-content: center;
+  gap: 5rem;
+`
+
+const HubText = styled.p`
+  width: 90%;
+  margin: 1rem 0;
+  font-weight: 300;
+  font-size: 1.2rem;
 `
