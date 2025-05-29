@@ -12,7 +12,7 @@ export default function Home() {
       <Header />
       <HeroSection>
         <Paragraph>
-          <HeroTitle>Monitoramento participativo para uma saúde única</HeroTitle>
+          <Title>Monitoramento participativo para uma saúde única</Title>
           <HeroText>Conectando dados, ciência e comunidade para fortalecer a saúde pública</HeroText>
           <Button onClick={() => Router.push('/painel-dados')}>
             <ButtonText>Acessar painel de dados</ButtonText>
@@ -37,7 +37,7 @@ const Paragraph = styled.div`
   width: 50%;
 `
 
-const HeroTitle = styled.h3`
+const Title = styled.h3`
   font-weight: 500;
   font-size: 2.5rem;
 `
