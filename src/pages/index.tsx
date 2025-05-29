@@ -1,6 +1,7 @@
 import { Header } from '@/components/Header'
 import Hero from '../../public/hero.svg'
 import ClickIcon from '../../public/icons/click.svg'
+import GroupIcon from '../../public/icons/group.svg'
 import Medicos from '../../public/Medicos.png'
 import Image from 'next/image'
 import styled from 'styled-components'
@@ -44,7 +45,7 @@ export default function Home() {
         <Divider>
           <CardColumn>
             <Card
-              image={ClickIcon}
+              image={GroupIcon}
               title="Painel de indicadores"
               description="Veja os dados e tendências em tempo real"
             />
