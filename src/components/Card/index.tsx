@@ -29,9 +29,11 @@ const CardContent = styled.div`
 const CardTextContainer = styled.div``
 
 const CardTitle = styled.h3`
+  font-weight: 500;
   color: var(--grey);
 `
 
 const CardDescription = styled.p`
+  font-weight: 300;
   color: var(--grey);
 `
