@@ -2,6 +2,10 @@ import { Header } from '@/components/Header'
 import Hero from '../../public/hero.svg'
 import ClickIcon from '../../public/icons/click.svg'
 import GroupIcon from '../../public/icons/group.svg'
+import ScienceIcon from '../../public/icons/science.svg'
+import EducationIcon from '../../public/icons/education.svg'
+import MapIcon from '../../public/icons/map.svg'
+import NotifyIcon from '../../public/icons/notify.svg'
 import Medicos from '../../public/Medicos.png'
 import Image from 'next/image'
 import styled from 'styled-components'
@@ -42,23 +46,23 @@ export default function Home() {
       </HubSection>
       <CardSection>
         <Title>Portal interativo de saúde</Title>
-        <Divider>
+        <Divider style={{ width: '100%', padding: 0 }}>
           <CardColumn>
             <Card
               image={GroupIcon}
               title="Painel de indicadores"
               description="Veja os dados e tendências em tempo real"
             />
-            <Card image={ClickIcon} title="Notificar sintomas" description="Ajude a monitorar sua região" />
+            <Card image={NotifyIcon} title="Notificar sintomas" description="Ajude a monitorar sua região" />
             <Card
-              image={ClickIcon}
+              image={ScienceIcon}
               title="Repositório científico"
               description="Consulta materiais produzidos pelo observatório"
             />
           </CardColumn>
           <CardColumn>
-            <Card image={ClickIcon} title="Mapa da saúde" description="Explore surtos e informações geográficas" />
-            <Card image={ClickIcon} title="Educação em saúde" description="Acesse vídeos, podcasts e FAQs" />
+            <Card image={MapIcon} title="Mapa da saúde" description="Explore surtos e informações geográficas" />
+            <Card image={EducationIcon} title="Educação em saúde" description="Acesse vídeos, podcasts e FAQs" />
           </CardColumn>
         </Divider>
       </CardSection>
@@ -144,7 +148,9 @@ const CardSection = styled.div`
 `
 
 const CardColumn = styled.div`
+  width: 50%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 3rem;
 `
