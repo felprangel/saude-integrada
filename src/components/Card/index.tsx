@@ -30,6 +30,13 @@ const CardContent = styled.div`
   width: 85%;
   gap: 1rem;
   cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `
 
 const CardTextContainer = styled.div`
