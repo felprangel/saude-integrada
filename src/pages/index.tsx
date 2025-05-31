@@ -68,7 +68,7 @@ export default function Home() {
         </Divider>
       </CardSection>
       <SaudeUnicaSection>
-        <TextSection>
+        <div>
           <Title>Porque saúde única?</Title>
           <HubText>
             A abordagem de Saúde Única reconhece que a saúde humana está diretamente conectada à saúde animal e ao meio
@@ -76,9 +76,20 @@ export default function Home() {
             saúde pública, considerando as interações entre pessoas, animais e ecossistemas na formulação de políticas e
             estratégias mais eficazes.
           </HubText>
-        </TextSection>
+        </div>
         <Image src={Saude} alt="doctor" />
       </SaudeUnicaSection>
+      <NotifySection>
+        <TextSection>
+          <Title>Sua participação faz a diferença!</Title>
+          <Title>Ajude a monitorar a saúde de sua comunidade</Title>
+        </TextSection>
+
+        <Button>
+          <ButtonText style={{ fontSize: '1.7rem' }}>Notifique agora</ButtonText>
+          <Image height={30} width={30} src={ClickIcon} alt="click icon" />
+        </Button>
+      </NotifySection>
     </>
   )
 }
@@ -177,4 +188,16 @@ const SaudeUnicaSection = styled.div`
   gap: 4rem;
 `
 
-const TextSection = styled.div``
+const TextSection = styled.div`
+  text-align: center;
+`
+
+const NotifySection = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 7rem;
+  margin-top: 12rem;
+  gap: 2rem;
+`
