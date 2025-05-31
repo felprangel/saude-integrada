@@ -24,11 +24,12 @@ const CardContent = styled.div`
   background-color: var(--card-color);
   border-radius: 1rem;
   display: flex;
-  padding: 2rem 1.5rem;
+  padding: 3rem 1.5rem;
   justify-content: center;
   align-items: center;
   width: 85%;
   gap: 1rem;
+  cursor: pointer;
 `
 
 const CardTextContainer = styled.div`
