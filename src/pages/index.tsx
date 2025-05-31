@@ -171,6 +171,9 @@ const CardColumn = styled.div`
 
 const SaudeUnicaSection = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7rem;
   gap: 4rem;
 `
 
