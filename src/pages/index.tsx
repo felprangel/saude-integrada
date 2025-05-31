@@ -145,6 +145,7 @@ const CardSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 6rem;
 `
 
 const CardColumn = styled.div`
