@@ -1,5 +1,6 @@
 import { Header } from '@/components/Header'
 import Hero from '../../public/hero.svg'
+import Saude from '../../public/saude.svg'
 import ClickIcon from '../../public/icons/click.svg'
 import GroupIcon from '../../public/icons/group.svg'
 import ScienceIcon from '../../public/icons/science.svg'
@@ -66,6 +67,18 @@ export default function Home() {
           </CardColumn>
         </Divider>
       </CardSection>
+      <SaudeUnicaSection>
+        <TextSection>
+          <Title>Porque saúde única?</Title>
+          <HubText>
+            A abordagem de Saúde Única reconhece que a saúde humana está diretamente conectada à saúde animal e ao meio
+            ambiente. O UC HUB adota esse conceito para promover ações integradas de vigilância, prevenção e educação em
+            saúde pública, considerando as interações entre pessoas, animais e ecossistemas na formulação de políticas e
+            estratégias mais eficazes.
+          </HubText>
+        </TextSection>
+        <Image src={Saude} alt="doctor" />
+      </SaudeUnicaSection>
     </>
   )
 }
@@ -155,3 +168,10 @@ const CardColumn = styled.div`
   align-items: center;
   gap: 3rem;
 `
+
+const SaudeUnicaSection = styled.div`
+  display: flex;
+  gap: 4rem;
+`
+
+const TextSection = styled.div``
