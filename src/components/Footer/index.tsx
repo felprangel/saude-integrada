@@ -1,3 +1,6 @@
+import Image from 'next/image'
+import Logo from '../../../public/logo.svg'
+import Una from '../../../public/una.svg'
 import styled from 'styled-components'
 
 export function Footer() {
@@ -14,7 +17,10 @@ export function Footer() {
         <Title>Informações</Title>
         <Link>Contato: email@site</Link>
       </FooterContent>
-      <FooterContent></FooterContent>
+      <FooterContent style={{ justifyContent: 'center', alignItems: 'center' }}>
+        <Image src={Logo} alt="logo" />
+        <Image src={Una} alt="una logo" />
+      </FooterContent>
     </FooterContainer>
   )
 }
