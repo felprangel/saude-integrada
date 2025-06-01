@@ -43,6 +43,9 @@ const FooterContent = styled.div`
 const Title = styled.h3`
   color: var(--grey);
   margin-bottom: 0.7rem;
+  font-weight: 500;
 `
 
-const Link = styled.a``
+const Link = styled.a`
+  margin: 0.1rem;
+`
