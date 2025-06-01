@@ -3,6 +3,9 @@ import { Header } from '@/components/Header'
 import { MainContainer } from '@/components/MainContainer'
 import { Paragraph } from '@/components/Paragraph'
 import { Title } from '@/components/Title'
+import Image from 'next/image'
+import Chart from '../../public/graficos/grafico1.svg'
+import Chart1 from '../../public/graficos/grafico2.svg'
 import styled from 'styled-components'
 
 export default function PainelDados() {
@@ -54,6 +57,10 @@ export default function PainelDados() {
             <CardNumber>30</CardNumber>
           </NumberCard>
         </NumbersContainer>
+        <ChartsContainer>
+          <Image src={Chart} alt="chart" />
+          <Image src={Chart1} alt="chart" />
+        </ChartsContainer>
       </MainContainer>
       <Footer />
     </>
@@ -91,3 +98,5 @@ const NumberCard = styled.div`
 const CardText = styled.h4``
 
 const CardNumber = styled.h4``
+
+const ChartsContainer = styled.div``
