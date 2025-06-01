@@ -2,7 +2,7 @@ import { HTMLProps } from 'react'
 import styled from 'styled-components'
 
 export function Paragraph(props: HTMLProps<HTMLParagraphElement>) {
-  return <ParagraphText>{props.children}</ParagraphText>
+  return <ParagraphText {...props}>{props.children}</ParagraphText>
 }
 
 const ParagraphText = styled.p`
