@@ -10,7 +10,10 @@ export function Footer() {
         <Link>Educação</Link>
         <Link>Repositório</Link>
       </FooterContent>
-      <FooterContent></FooterContent>
+      <FooterContent>
+        <Title>Informações</Title>
+        <Link>Contato: email@site</Link>
+      </FooterContent>
       <FooterContent></FooterContent>
     </FooterContainer>
   )
