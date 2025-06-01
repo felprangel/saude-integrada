@@ -12,6 +12,7 @@ import Image from 'next/image'
 import styled from 'styled-components'
 import { useRouter } from 'next/router'
 import { Card } from '@/components/Card'
+import { Footer } from '@/components/Footer'
 
 export default function Home() {
   const Router = useRouter()
@@ -90,6 +91,7 @@ export default function Home() {
           <Image height={30} width={30} src={ClickIcon} alt="click icon" />
         </Button>
       </NotifySection>
+      <Footer />
     </>
   )
 }
