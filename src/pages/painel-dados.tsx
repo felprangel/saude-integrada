@@ -36,6 +36,24 @@ export default function PainelDados() {
           </SelectContainer>
           <Button>Aplicar filtros</Button>
         </FilterContainer>
+        <NumbersContainer>
+          <NumberCard>
+            <CardText>Total de casos notificados</CardText>
+            <CardNumber>130</CardNumber>
+          </NumberCard>
+        </NumbersContainer>
+        <NumbersContainer>
+          <NumberCard>
+            <CardText>Casos ativos no período</CardText>
+            <CardNumber>45</CardNumber>
+          </NumberCard>
+        </NumbersContainer>
+        <NumbersContainer>
+          <NumberCard>
+            <CardText>Média móvel de novos casos</CardText>
+            <CardNumber>30</CardNumber>
+          </NumberCard>
+        </NumbersContainer>
       </MainContainer>
       <Footer />
     </>
@@ -58,3 +76,18 @@ const SelectLabel = styled.h4``
 const Option = styled.option``
 
 const Button = styled.button``
+
+const NumbersContainer = styled.div`
+  display: flex;
+`
+
+const NumberCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+
+const CardText = styled.h4``
+
+const CardNumber = styled.h4``
