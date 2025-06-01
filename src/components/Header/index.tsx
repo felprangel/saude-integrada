@@ -24,16 +24,3 @@ const LogoContainer = styled.div`
   border-radius: 0 2rem 2rem 0;
   background-color: var(--grey);
 `
-
-const LinksContainer = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-`
-
-const Text = styled.p`
-  color: var(--grey);
-  font-weight: 500;
-  font-size: 1.2rem;
-`
