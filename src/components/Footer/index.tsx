@@ -17,9 +17,9 @@ export function Footer() {
         <Title>Informações</Title>
         <Link>Contato: email@site</Link>
       </FooterContent>
-      <FooterContent style={{ justifyContent: 'center', alignItems: 'center' }}>
-        <Image src={Logo} alt="logo" />
-        <Image src={Una} alt="una logo" />
+      <FooterContent style={{ justifyContent: 'center', alignItems: 'center', gap: '1.5rem' }}>
+        <Image width={200} src={Logo} alt="logo" />
+        <Image width={200} src={Una} alt="una logo" />
       </FooterContent>
     </FooterContainer>
   )
@@ -29,6 +29,7 @@ const FooterContainer = styled.div`
   display: flex;
   justify-content: space-between;
   background-color: var(--primary-color);
+  padding: 1.5rem 4rem;
 `
 
 const FooterContent = styled.div`
@@ -41,6 +42,7 @@ const FooterContent = styled.div`
 
 const Title = styled.h3`
   color: var(--grey);
+  margin-bottom: 0.7rem;
 `
 
 const Link = styled.a``
