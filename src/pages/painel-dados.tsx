@@ -7,8 +7,11 @@ import Image from 'next/image'
 import Chart from '../../public/graficos/grafico1.svg'
 import Chart1 from '../../public/graficos/grafico2.svg'
 import styled from 'styled-components'
+import { useRouter } from 'next/router'
 
 export default function PainelDados() {
+  const Router = useRouter()
+
   return (
     <>
       <Header />
@@ -61,7 +64,7 @@ export default function PainelDados() {
           <Image src={Chart} alt="chart" />
           <Image src={Chart1} alt="chart" />
         </ChartsContainer>
-        <Button>Visualizar no mapa</Button>
+        <Button onClick={() => Router.push('/mapa-saude')}>Visualizar no mapa</Button>
       </MainContainer>
       <Footer />
     </>
