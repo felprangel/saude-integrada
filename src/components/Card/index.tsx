@@ -1,16 +1,19 @@
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import styled from 'styled-components'
 
 interface CardProps {
   title: string
   description: string
   image: StaticImport
+  link: string
 }
 
 export function Card(props: CardProps) {
+  const Router = useRouter()
   return (
-    <CardContent>
+    <CardContent onClick={() => Router.push(props.link)}>
       <Image src={props.image} alt="card icon" />
       <CardTextContainer>
         <CardTitle>{props.title}</CardTitle>
