@@ -8,10 +8,10 @@ export function Footer() {
     <FooterContainer>
       <FooterContent>
         <Title>Links rápidos</Title>
-        <Link>Painel</Link>
-        <Link>Notificar</Link>
-        <Link>Educação</Link>
-        <Link>Repositório</Link>
+        <Link href="/painel-dados">Painel</Link>
+        <Link href="/notificar-sintomas">Notificar</Link>
+        <Link href="/educacao-saude">Educação</Link>
+        <Link href="/repositorio-cientifico">Repositório</Link>
       </FooterContent>
       <FooterContent>
         <Title>Informações</Title>
