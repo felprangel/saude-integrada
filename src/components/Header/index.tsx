@@ -23,4 +23,5 @@ const LogoContainer = styled.div`
   padding: 0 5rem 0 2rem;
   border-radius: 0 2rem 2rem 0;
   background-color: var(--grey);
+  cursor: pointer;
 `
