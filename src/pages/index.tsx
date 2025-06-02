@@ -86,7 +86,7 @@ export default function Home() {
           <Title>Ajude a monitorar a saúde de sua comunidade</Title>
         </TextSection>
 
-        <Button>
+        <Button onClick={() => Router.push('/notificar-sintomas')}>
           <ButtonText style={{ fontSize: '1.7rem' }}>Notifique agora</ButtonText>
           <Image height={30} width={30} src={ClickIcon} alt="click icon" />
         </Button>
