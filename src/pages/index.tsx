@@ -54,17 +54,34 @@ export default function Home() {
               image={GroupIcon}
               title="Painel de indicadores"
               description="Veja os dados e tendências em tempo real"
+              link="/painel-dados"
             />
-            <Card image={NotifyIcon} title="Notificar sintomas" description="Ajude a monitorar sua região" />
+            <Card
+              image={NotifyIcon}
+              title="Notificar sintomas"
+              description="Ajude a monitorar sua região"
+              link="/notificar-sintomas"
+            />
             <Card
               image={ScienceIcon}
               title="Repositório científico"
               description="Consulta materiais produzidos pelo observatório"
+              link="/repositorio-cientifico"
             />
           </CardColumn>
           <CardColumn>
-            <Card image={MapIcon} title="Mapa da saúde" description="Explore surtos e informações geográficas" />
-            <Card image={EducationIcon} title="Educação em saúde" description="Acesse vídeos, podcasts e FAQs" />
+            <Card
+              image={MapIcon}
+              title="Mapa da saúde"
+              description="Explore surtos e informações geográficas"
+              link="/mapa-saude"
+            />
+            <Card
+              image={EducationIcon}
+              title="Educação em saúde"
+              description="Acesse vídeos, podcasts e FAQs"
+              link="/educacao-saude"
+            />
           </CardColumn>
         </Divider>
       </CardSection>
