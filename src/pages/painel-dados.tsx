@@ -61,6 +61,7 @@ export default function PainelDados() {
           <Image src={Chart} alt="chart" />
           <Image src={Chart1} alt="chart" />
         </ChartsContainer>
+        <Button>Visualizar no mapa</Button>
       </MainContainer>
       <Footer />
     </>
