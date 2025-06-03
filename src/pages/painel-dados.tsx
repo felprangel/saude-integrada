@@ -73,6 +73,8 @@ export default function PainelDados() {
 
 const FilterContainer = styled.div`
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 `
 
 const SelectContainer = styled.div`
@@ -80,13 +82,26 @@ const SelectContainer = styled.div`
   flex-direction: column;
 `
 
-const Select = styled.select``
+const Select = styled.select`
+  background-color: var(--grey);
+  width: 17rem;
+  height: 2rem;
+  padding: 0 0.5rem;
+  font-weight: 300;
+`
 
 const SelectLabel = styled.h4``
 
 const Option = styled.option``
 
-const Button = styled.button``
+const Button = styled.button`
+  border: 0;
+  background-color: var(--primary-color);
+  color: var(--grey);
+  border-radius: 3px;
+  padding: 0.9rem 5rem;
+  font-weight: 500;
+`
 
 const NumbersContainer = styled.div`
   display: flex;
