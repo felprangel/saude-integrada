@@ -85,7 +85,12 @@ export default function RepositorioCientifico() {
   )
 }
 
-const ContentContainer = styled.div``
+const ContentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+`
 
 const SearchInput = styled.input``
 
