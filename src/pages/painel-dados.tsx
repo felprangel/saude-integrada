@@ -131,4 +131,9 @@ const CardNumber = styled.h4`
   font-size: 1.6rem;
 `
 
-const ChartsContainer = styled.div``
+const ChartsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+`
