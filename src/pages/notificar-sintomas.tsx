@@ -41,7 +41,7 @@ export default function NotificarSintomas() {
             </InputContainer>
             <InputContainer>
               <Label>Sintomas</Label>
-              <TextArea placeholder="Descreva seus sintomas (ex: tosse, dor muscular...)" />
+              <TextArea rows={3} placeholder="Descreva seus sintomas (ex: tosse, dor muscular...)" />
             </InputContainer>
             <InputContainer>
               <Label>Data de início dos sintomas</Label>
@@ -49,7 +49,7 @@ export default function NotificarSintomas() {
             </InputContainer>
             <InputContainer>
               <Label>Comentários adicionais (opcional)</Label>
-              <TextArea placeholder="Ex: uso de medicamento, contato com alguém doente..." />
+              <TextArea rows={4} placeholder="Ex: uso de medicamento, contato com alguém doente..." />
             </InputContainer>
             <CheckboxContainer>
               <Checkbox type="checkbox" />
@@ -91,7 +91,7 @@ const Form = styled.form`
   flex-direction: column;
   align-items: flex-start;
   max-width: fit-content;
-  padding: 3rem 4rem;
+  padding: 3rem 4rem 5rem 4rem;
   border-radius: 10px;
   gap: 1rem;
 `
@@ -100,10 +100,12 @@ const Input = styled.input`
   width: 100%;
   background-color: var(--grey);
   border: 1px solid var(--primary-color);
+  padding: 0.3rem 0.8rem;
 `
 
 const Label = styled.label`
   font-weight: 500;
+  font-size: 1.2rem;
 `
 
 const InputContainer = styled.div`
@@ -126,4 +128,11 @@ const CheckboxContainer = styled.div`
   margin-bottom: 2rem;
 `
 
-const Button = styled.button``
+const Button = styled.button`
+  background-color: var(--text-color);
+  color: var(--grey);
+  border: 0;
+  font-weight: 500;
+  border-radius: 3px;
+  padding: 0.3rem 3rem;
+`
