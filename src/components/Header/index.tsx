@@ -1,11 +1,14 @@
 import Image from 'next/image'
 import Logo from '../../../public/logo.svg'
 import styled from 'styled-components'
+import { useRouter } from 'next/router'
 
 export function Header() {
+  const Router = useRouter()
+
   return (
     <HeaderContainer>
-      <LogoContainer>
+      <LogoContainer onClick={() => Router.push('/')}>
         <Image height={90} src={Logo} alt="logo" />
       </LogoContainer>
     </HeaderContainer>
