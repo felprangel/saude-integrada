@@ -67,7 +67,13 @@ const TitleContainer = styled.div`
   align-items: center;
 `
 
-const TextContainer = styled.div``
+const TextContainer = styled.div`
+  border: 1px solid var(--primary-color);
+  background-color: var(--grey);
+  border-radius: 10px;
+  padding: 1.5rem 1rem;
+  margin: 2rem 0;
+`
 
 const Text = styled.p``
 
