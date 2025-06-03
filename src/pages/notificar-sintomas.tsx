@@ -29,33 +29,35 @@ export default function NotificarSintomas() {
             vigilância em saúde pública. Nenhuma informação pessoal identificável será exigida.
           </Text>
         </TextContainer>
-        <Form>
-          <InputContainer>
-            <Label>Localização (bairro/cidade)</Label>
-            <Input type="text" placeholder="Ex: centro, Rua das flores 123, Minas Gerais - MG" />
-          </InputContainer>
-          <InputContainer>
-            <Label>Idade (opcional)</Label>
-            <Input type="number" placeholder="Ex: 20" />
-          </InputContainer>
-          <InputContainer>
-            <Label>Sintomas</Label>
-            <TextArea placeholder="Descreva seus sintomas (ex: tosse, dor muscular...)" />
-          </InputContainer>
-          <InputContainer>
-            <Label>Data de início dos sintomas</Label>
-            <Input type="date" placeholder="Ex: 28/05/2025" />
-          </InputContainer>
-          <InputContainer>
-            <Label>Comentários adicionais (opcional)</Label>
-            <TextArea placeholder="Ex: uso de medicamento, contato com alguém doente..." />
-          </InputContainer>
-          <CheckboxContainer>
-            <Label>Declaro que li e concordo com a política de privacidade</Label>
-            <Checkbox type="checkbox" />
-          </CheckboxContainer>
-          <Button>Enviar notificação</Button>
-        </Form>
+        <FormContainer>
+          <Form>
+            <InputContainer>
+              <Label>Localização (bairro/cidade)</Label>
+              <Input type="text" placeholder="Ex: centro, Rua das flores 123, Minas Gerais - MG" />
+            </InputContainer>
+            <InputContainer>
+              <Label>Idade (opcional)</Label>
+              <Input type="number" placeholder="Ex: 20" />
+            </InputContainer>
+            <InputContainer>
+              <Label>Sintomas</Label>
+              <TextArea placeholder="Descreva seus sintomas (ex: tosse, dor muscular...)" />
+            </InputContainer>
+            <InputContainer>
+              <Label>Data de início dos sintomas</Label>
+              <Input type="date" placeholder="Ex: 28/05/2025" />
+            </InputContainer>
+            <InputContainer>
+              <Label>Comentários adicionais (opcional)</Label>
+              <TextArea placeholder="Ex: uso de medicamento, contato com alguém doente..." />
+            </InputContainer>
+            <CheckboxContainer>
+              <Checkbox type="checkbox" />
+              <Label>Declaro que li e concordo com a política de privacidade</Label>
+            </CheckboxContainer>
+            <Button>Enviar notificação</Button>
+          </Form>
+        </FormContainer>
       </MainContainer>
       <Footer />
     </>
@@ -77,18 +79,51 @@ const TextContainer = styled.div`
 
 const Text = styled.p``
 
-const Form = styled.form``
+const FormContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`
 
-const Input = styled.input``
+const Form = styled.form`
+  border: 1px solid var(--primary-color);
+  background-color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: fit-content;
+  padding: 3rem 4rem;
+  border-radius: 10px;
+  gap: 1rem;
+`
 
-const Label = styled.label``
+const Input = styled.input`
+  width: 100%;
+  background-color: var(--grey);
+  border: 1px solid var(--primary-color);
+`
 
-const InputContainer = styled.div``
+const Label = styled.label`
+  font-weight: 500;
+`
 
-const TextArea = styled.textarea``
+const InputContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 100%;
+`
+
+const TextArea = styled.textarea`
+  background-color: var(--grey);
+  border: 1px solid var(--primary-color);
+`
 
 const Checkbox = styled.input``
 
-const CheckboxContainer = styled.div``
+const CheckboxContainer = styled.div`
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 2rem;
+`
 
 const Button = styled.button``
