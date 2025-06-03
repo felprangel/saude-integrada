@@ -106,6 +106,9 @@ const Button = styled.button`
 
 const NumbersContainer = styled.div`
   display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2.5rem 0;
 `
 
 const NumberCard = styled.div`
@@ -113,10 +116,19 @@ const NumberCard = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--grey);
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 9px;
 `
 
-const CardText = styled.h4``
+const CardText = styled.h4`
+  font-weight: 500;
+`
 
-const CardNumber = styled.h4``
+const CardNumber = styled.h4`
+  font-weight: 500;
+  font-size: 1.6rem;
+`
 
 const ChartsContainer = styled.div``
