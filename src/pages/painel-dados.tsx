@@ -75,11 +75,13 @@ const FilterContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 5rem;
 `
 
 const SelectContainer = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 0.4rem;
 `
 
 const Select = styled.select`
@@ -90,7 +92,10 @@ const Select = styled.select`
   font-weight: 300;
 `
 
-const SelectLabel = styled.h4``
+const SelectLabel = styled.h4`
+  font-weight: 500;
+  font-size: 1.1rem;
+`
 
 const Option = styled.option``
 
