@@ -47,14 +47,10 @@ export default function PainelDados() {
             <CardText>Total de casos notificados</CardText>
             <CardNumber>130</CardNumber>
           </NumberCard>
-        </NumbersContainer>
-        <NumbersContainer>
           <NumberCard>
             <CardText>Casos ativos no período</CardText>
             <CardNumber>45</CardNumber>
           </NumberCard>
-        </NumbersContainer>
-        <NumbersContainer>
           <NumberCard>
             <CardText>Média móvel de novos casos</CardText>
             <CardNumber>30</CardNumber>
