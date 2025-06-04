@@ -43,15 +43,15 @@ export default function MapaSaude() {
             <LegendTitle>Legenda:</LegendTitle>
             <ColorContainer>
               <LegendText>Alto</LegendText>
-              <LegendColor />
+              <LegendColor style={{ backgroundColor: 'var(--color-text)' }} />
             </ColorContainer>
             <ColorContainer>
               <LegendText>Médio</LegendText>
-              <LegendColor />
+              <LegendColor style={{ backgroundColor: 'var(--primary-color)' }} />
             </ColorContainer>
             <ColorContainer>
               <LegendText>Baixo</LegendText>
-              <LegendColor />
+              <LegendColor style={{ backgroundColor: 'var(--color-text)' }} />
             </ColorContainer>
             <LegendColor />
           </LegendContainer>
