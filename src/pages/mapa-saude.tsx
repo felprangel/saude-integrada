@@ -39,7 +39,22 @@ export default function MapaSaude() {
             </InputContainer>
             <Button>Aplicar filtros</Button>
           </SelectContainer>
-          <LegendContainer></LegendContainer>
+          <LegendContainer>
+            <LegendTitle>Legenda:</LegendTitle>
+            <ColorContainer>
+              <LegendText>Alto</LegendText>
+              <LegendColor />
+            </ColorContainer>
+            <ColorContainer>
+              <LegendText>Médio</LegendText>
+              <LegendColor />
+            </ColorContainer>
+            <ColorContainer>
+              <LegendText>Baixo</LegendText>
+              <LegendColor />
+            </ColorContainer>
+            <LegendColor />
+          </LegendContainer>
           <Image src={Map} alt="brazil map" />
         </MainContent>
       </MainContainer>
@@ -63,3 +78,11 @@ const Option = styled.option``
 const Button = styled.button``
 
 const LegendContainer = styled.div``
+
+const LegendTitle = styled.h4``
+
+const ColorContainer = styled.div``
+
+const LegendText = styled.p``
+
+const LegendColor = styled.div``
