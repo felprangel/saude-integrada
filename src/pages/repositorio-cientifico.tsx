@@ -92,22 +92,49 @@ const ContentContainer = styled.div`
   gap: 2rem;
 `
 
-const SearchInput = styled.input``
+const SearchInput = styled.input`
+  border: 1px solid var(--primary-color);
+  background-color: var(--grey);
+`
 
 const FilterContainer = styled.div``
 
-const Select = styled.select``
+const Select = styled.select`
+  border: 1px solid var(--primary-color);
+  background-color: var(--grey);
+`
 
 const Option = styled.option``
 
-const Card = styled.div``
+const Card = styled.div`
+  border: 1px solid var(--primary-color);
+  background-color: var(--grey);
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  padding: 1.5rem 2.5rem;
+  border-radius: 8px;
+`
 
 const CardContent = styled.div``
 
-const CardTitle = styled.h4``
+const CardTitle = styled.h4`
+  font-weight: 500;
+  font-size: 1.2rem;
+`
 
-const CardText = styled.p``
+const CardText = styled.p`
+  font-weight: 300;
+  font-size: 1.1rem;
+`
 
-const ChipsContainer = styled.div``
+const ChipsContainer = styled.div`
+  display: flex;
+  gap: 1rem;
+`
 
-const CardChip = styled.span``
+const CardChip = styled.span`
+  border: 1px solid var(--primary-color);
+  border-radius: 16px;
+  padding: 0.4rem;
+`
