@@ -112,11 +112,17 @@ const Card = styled.div`
   display: flex;
   width: 70%;
   justify-content: space-between;
+  align-items: center;
   padding: 1.5rem 2.5rem;
   border-radius: 8px;
 `
 
-const CardContent = styled.div``
+const CardContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+`
 
 const CardTitle = styled.h4`
   font-weight: 500;
@@ -137,4 +143,5 @@ const CardChip = styled.span`
   border: 1px solid var(--primary-color);
   border-radius: 16px;
   padding: 0.4rem;
+  font-weight: 500;
 `
