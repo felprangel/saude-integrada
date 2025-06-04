@@ -95,6 +95,11 @@ const ContentContainer = styled.div`
 const SearchInput = styled.input`
   border: 1px solid var(--primary-color);
   background-color: var(--grey);
+  border-radius: 10px;
+  height: 3rem;
+  width: 50%;
+  padding: 0 1rem;
+  margin-top: 4rem;
 `
 
 const FilterContainer = styled.div`
