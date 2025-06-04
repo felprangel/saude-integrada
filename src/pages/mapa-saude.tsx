@@ -42,20 +42,20 @@ export default function MapaSaude() {
           <LegendContainer>
             <LegendTitle>Legenda:</LegendTitle>
             <ColorContainer>
+              <LegendColor style={{ backgroundColor: 'var(--text-color)' }} />
               <LegendText>Alto</LegendText>
-              <LegendColor style={{ backgroundColor: 'var(--color-text)' }} />
             </ColorContainer>
             <ColorContainer>
-              <LegendText>Médio</LegendText>
               <LegendColor style={{ backgroundColor: 'var(--primary-color)' }} />
+              <LegendText>Médio</LegendText>
             </ColorContainer>
             <ColorContainer>
+              <LegendColor style={{ backgroundColor: 'var(--legend-color)' }} />
               <LegendText>Baixo</LegendText>
-              <LegendColor style={{ backgroundColor: 'var(--color-text)' }} />
             </ColorContainer>
             <LegendColor />
           </LegendContainer>
-          <Image src={Map} alt="brazil map" />
+          <Image style={{ marginLeft: '17rem' }} src={Map} alt="brazil map" />
         </MainContent>
       </MainContainer>
       <Footer />
@@ -65,7 +65,6 @@ export default function MapaSaude() {
 
 const MainContent = styled.div`
   display: flex;
-  justify-content: space-around;
   align-items: flex-start;
   margin: 3rem 0;
 `
@@ -105,12 +104,27 @@ const Button = styled.button`
   padding: 0.5rem 3rem;
 `
 
-const LegendContainer = styled.div``
+const LegendContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-left: 3rem;
+`
 
-const LegendTitle = styled.h4``
+const LegendTitle = styled.h4`
+  font-weight: 500;
+  font-family: 2rem;
+`
 
-const ColorContainer = styled.div``
+const ColorContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+`
 
 const LegendText = styled.p``
 
-const LegendColor = styled.div``
+const LegendColor = styled.div`
+  width: 38px;
+  height: 15px;
+`
