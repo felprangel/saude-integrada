@@ -97,11 +97,19 @@ const SearchInput = styled.input`
   background-color: var(--grey);
 `
 
-const FilterContainer = styled.div``
+const FilterContainer = styled.div`
+  display: flex;
+  gap: 1rem;
+`
 
 const Select = styled.select`
   border: 1px solid var(--primary-color);
   background-color: var(--grey);
+  padding: 0.2rem 1.3rem;
+  width: 8rem;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1.1rem;
 `
 
 const Option = styled.option``
