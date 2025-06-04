@@ -63,19 +63,47 @@ export default function MapaSaude() {
   )
 }
 
-const MainContent = styled.div``
+const MainContent = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 3rem 0;
+`
 
-const SelectContainer = styled.div``
+const SelectContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--grey);
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  gap: 1rem;
+`
 
-const InputContainer = styled.div``
+const InputContainer = styled.div`
+  width: 100%;
+`
 
-const Label = styled.label``
+const Label = styled.label`
+  font-weight: 500;
+`
 
-const Select = styled.select``
+const Select = styled.select`
+  width: 100%;
+  background-color: var(--grey);
+  padding: 0.2rem;
+  margin-top: 0.3rem;
+`
 
 const Option = styled.option``
 
-const Button = styled.button``
+const Button = styled.button`
+  border: 0;
+  color: var(--grey);
+  background-color: var(--primary-color);
+  padding: 0.5rem 3rem;
+`
 
 const LegendContainer = styled.div``
 
