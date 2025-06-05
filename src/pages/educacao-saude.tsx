@@ -5,6 +5,12 @@ import { Paragraph } from '@/components/Paragraph'
 import { Title } from '@/components/Title'
 import Image from 'next/image'
 import styled from 'styled-components'
+import Educativo1 from '../../public/educativo1.png'
+import Educativo2 from '../../public/educativo2.png'
+import Educativo3 from '../../public/educativo3.png'
+import Educativo4 from '../../public/educativo4.png'
+import Educativo5 from '../../public/educativo5.png'
+import Educativo6 from '../../public/educativo6.png'
 
 export default function EducacaoSaude() {
   return (
@@ -19,7 +25,7 @@ export default function EducacaoSaude() {
         <MainContent>
           <VideosContainer>
             <Card>
-              {/* <Image src={} alt="card image" /> */}
+              <Image src={Educativo1} alt="card image" />
               <CardContent>
                 <CardTitle>Como prevenir a Dengue</CardTitle>
                 <CardText>Orientações simples para o dia a dia.</CardText>
@@ -27,14 +33,14 @@ export default function EducacaoSaude() {
               </CardContent>
             </Card>
             <Card>
-              {/* <Image src={} alt="card image" /> */}
+              <Image src={Educativo2} alt="card image" />
               <CardContent>
                 <CardTitle>Diferença entre sintomas da gripe, COVID-19 e Dengue</CardTitle>
                 <Link>Ler mais</Link>
               </CardContent>
             </Card>
             <Card>
-              {/* <Image src={} alt="card image" /> */}
+              <Image src={Educativo3} alt="card image" />
               <CardContent>
                 <CardTitle>Cuidados com animais domésticos</CardTitle>
                 <CardText>Prevenção contra a leishmaniose</CardText>
@@ -44,7 +50,7 @@ export default function EducacaoSaude() {
           </VideosContainer>
           <VideosContainer>
             <Card>
-              {/* <Image src={} alt="card image" /> */}
+              <Image src={Educativo4} alt="card image" />
               <CardContent>
                 <CardTitle>Quando procurar uma unidade de saúde</CardTitle>
                 <CardText>Descubra em que casos é necessário atendimento.</CardText>
@@ -52,7 +58,7 @@ export default function EducacaoSaude() {
               </CardContent>
             </Card>
             <Card>
-              {/* <Image src={} alt="card image" /> */}
+              <Image src={Educativo5} alt="card image" />
               <CardContent>
                 <CardTitle>Sintomas que você deve conhecer</CardTitle>
                 <CardText>Saiba reconhecer os sinais mais comuns de doenças.</CardText>
@@ -60,7 +66,7 @@ export default function EducacaoSaude() {
               </CardContent>
             </Card>
             <Card>
-              {/* <Image src={} alt="card image" /> */}
+              <Image src={Educativo6} alt="card image" />
               <CardContent>
                 <CardTitle>Cuidados com a saúde no verão</CardTitle>
                 <CardText>Proteja-se do calor e previna infecções sazonais.</CardText>
