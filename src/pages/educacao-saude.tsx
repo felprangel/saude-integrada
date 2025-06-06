@@ -81,16 +81,43 @@ export default function EducacaoSaude() {
   )
 }
 
-const MainContent = styled.div``
+const MainContent = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5rem 0;
+`
 
-const VideosContainer = styled.div``
+const VideosContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+`
 
-const Card = styled.div``
+const Card = styled.div`
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+`
 
-const CardContent = styled.div``
+const CardContent = styled.div`
+  display: flex;
+  flex-direction: column;
+`
 
-const CardTitle = styled.h4``
+const CardTitle = styled.h4`
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+`
 
-const CardText = styled.p``
+const CardText = styled.p`
+  font-weight: 300;
+  margin-bottom: 1rem;
+`
 
-const Link = styled.a``
+const Link = styled.a`
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+`
