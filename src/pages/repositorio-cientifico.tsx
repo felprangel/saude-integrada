@@ -111,7 +111,7 @@ const Select = styled.select`
   border: 1px solid var(--primary-color);
   background-color: var(--grey);
   padding: 0.2rem 1.3rem;
-  width: 8rem;
+  width: 10rem;
   border-radius: 5px;
   font-weight: 500;
   font-size: 1.1rem;
