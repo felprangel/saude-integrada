@@ -22,19 +22,19 @@ export default function MapaSaude() {
             <InputContainer>
               <Label>Doença</Label>
               <Select>
-                <Option>Selecione...</Option>
+                <Option>Dengue</Option>
               </Select>
             </InputContainer>
             <InputContainer>
               <Label>Período</Label>
               <Select>
-                <Option>Selecione...</Option>
+                <Option>Últimos 6 meses</Option>
               </Select>
             </InputContainer>
             <InputContainer>
               <Label>Nível de risco</Label>
               <Select>
-                <Option>Selecione...</Option>
+                <Option>Médio</Option>
               </Select>
             </InputContainer>
             <Button>Aplicar filtros</Button>

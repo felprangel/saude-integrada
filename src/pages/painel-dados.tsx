@@ -25,19 +25,19 @@ export default function PainelDados() {
           <SelectContainer>
             <SelectLabel>Região</SelectLabel>
             <Select name="regiao" id="regiao">
-              <Option value="selecione">Selecione...</Option>
+              <Option value="selecione">Centro-Oeste</Option>
             </Select>
           </SelectContainer>
           <SelectContainer>
             <SelectLabel>Doença</SelectLabel>
             <Select name="doenca" id="doenca">
-              <Option value="selecione">Selecione...</Option>
+              <Option value="selecione">Dengue</Option>
             </Select>
           </SelectContainer>
           <SelectContainer>
             <SelectLabel>Período</SelectLabel>
             <Select name="periodo" id="periodo">
-              <Option value="selecione">Selecione...</Option>
+              <Option value="selecione">Últimos 6 meses</Option>
             </Select>
           </SelectContainer>
           <Button>Aplicar filtros</Button>

@@ -21,13 +21,13 @@ export default function RepositorioCientifico() {
           <SearchInput placeholder="Buscar" />
           <FilterContainer>
             <Select name="tipo" id="tipo">
-              <Option value="selecione">Tipo</Option>
+              <Option value="selecione">Artigo</Option>
             </Select>
             <Select name="data" id="data">
-              <Option value="selecione">Data</Option>
+              <Option value="selecione">Último ano</Option>
             </Select>
             <Select name="autor" id="autor">
-              <Option value="selecione">Autor</Option>
+              <Option value="selecione">UNA</Option>
             </Select>
           </FilterContainer>
           <Card>
